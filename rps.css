@@ -45,6 +45,9 @@ header{
     padding: 2px; 
     border-radius: 5px;
 }
+.result{
+    height: 50px;
+}
 .result>p{
     font-size: 30px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -60,13 +63,12 @@ sub{
 .selector{
     display: inline-block;
     margin: auto 20px;
-    /*border: 2px solid white;*/
     border-radius: 50%;
     transition: all 0.3s;
 }
 .selector:hover{
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 .last{
     font-size: 16px;
@@ -75,5 +77,12 @@ sub{
 img{
     padding: 0px;
     width: 160px;
+}
+.win_lose{
+    font-size: 50px;
+    height:50px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
