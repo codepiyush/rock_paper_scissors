@@ -9,6 +9,9 @@ var scissors=document.getElementById("scissors");
 var win_lose=document.querySelector(".win_lose > p");
 var cont = document.querySelectorAll("button");
 var light1=document.getElementById("resetLightbox");
+var light2 =document.getElementsByClassName("lightcontent")[0];
+var ulabel=document.getElementById("user_label");
+var ngame=document.getElementsByClassName("ngmodal")[0];
 function comprand(){
     var choices=['r', 'p','s'];
     var rand=Math.floor(Math.random()*3);
@@ -83,7 +86,34 @@ function delay(w)
 }
 cont[1].addEventListener('click',function(){
    light1.style.display="block";
+   light1.classList.add("animatein");
 });
 cont[3].addEventListener('click',function(){
     light1.style.display="none";
 })
+cont[2].addEventListener('click',function(){
+    user_score=0;
+    comp_score=0;
+    user_score_span.innerHTML=user_score;
+    comp_score_span.innerHTML=comp_score;
+    light1.style.display="none";
+});
+cont[4].addEventListener('click', function(){
+    var k=document.getElementById("playerName").value;
+    if(k.length!=0)
+    {ulabel.innerHTML=k;
+    user_score=0;
+    comp_score=0;
+    user_score_span.innerHTML=user_score;
+    comp_score_span.innerHTML=comp_score;
+    ngame.style.display="none";
+    result.innerHTML="";
+    win_lose.innerHTML="";
+    }
+    else{
+        alert("You must enter Some Name");
+    } 
+});
+cont[0].addEventListener('click',function(){
+    ngame.style.display="block";
+});

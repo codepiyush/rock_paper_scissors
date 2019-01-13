@@ -1,0 +1,32 @@
+{
+    "telemetry.machineId": "bbcbc93255908ddd3f3609688ecd8ca062cbe09015ac53a256350b358293488c",
+    "theme": "vs-dark",
+    "themeBackground": "#1e1e1e",
+    "pickerWorkingDir": "/root/Desktop",
+    "openedPathsList": {
+        "workspaces2": [
+            "file:///root/Desktop/rock_paper_scissors"
+        ],
+        "files2": []
+    },
+    "windowsState": {
+        "openedWindows": [],
+        "lastActiveWindow": {
+            "folderUri": {
+                "$mid": 1,
+                "fsPath": "/root/Desktop/rock_paper_scissors",
+                "external": "file:///root/Desktop/rock_paper_scissors",
+                "path": "/root/Desktop/rock_paper_scissors",
+                "scheme": "file"
+            },
+            "backupPath": "/root/Desktop/rock_paper_scissors/~/.vscode-root/Backups/fef6c7b5f4cf55f4a1be2b4041b43f04",
+            "uiState": {
+                "mode": 0,
+                "x": 0,
+                "y": 27,
+                "width": 1920,
+                "height": 1053
+            }
+        }
+    }
+}
