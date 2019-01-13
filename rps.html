@@ -6,10 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>rock_paper_scissors</title>
     <link rel="stylesheet" href="rps.css">
+    
 </head>
 <body>
     <header>Rock Paper Scissors</header>
-    <div class="score_board">
+    <section class="container">
+            <div class="buttons">   
+                    <button class="gbutton" name="newGame" value="NEW GAME">New Game</button>
+                    <button name="reset" class="gbutton" value="reset">Reset</button>
+                    </button> 
+                </div>
+    <div>
+        <div class="score_board">
         <div id="user_label" class="label">User</div>
         <div id="comp_label" class="label">Comp</div>
         <span id="user_score">0</span>:<span id="comp_score">0</span>
@@ -31,6 +39,17 @@
         <p>
 
         </p>
+    </div>
+</div>
+    
+    </section>
+    <div id="resetLightbox">
+        <div class="lightcontent">
+            <p>Ressetting the score will Set the scores to zero.</p>
+            <p><b>Do you wish to continue?</b></p>
+            <button name="continue">Continue</button>
+            <button name="cancel">Cancel</button>
+        </div>
     </div>
     <script src="rps.js"></script>
 </body>

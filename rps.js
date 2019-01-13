@@ -7,6 +7,8 @@ var rock=document.getElementById("rock");
 var paper=document.getElementById("paper");
 var scissors=document.getElementById("scissors");
 var win_lose=document.querySelector(".win_lose > p");
+var cont = document.querySelectorAll("button");
+var light1=document.getElementById("resetLightbox");
 function comprand(){
     var choices=['r', 'p','s'];
     var rand=Math.floor(Math.random()*3);
@@ -72,3 +74,16 @@ paper.addEventListener('click', function(){
 scissors.addEventListener('click', function(){
     game("s");
 });
+function delay(w)
+{
+    for(i=0;i<w;i++)
+    {
+        continue;
+    }
+}
+cont[1].addEventListener('click',function(){
+   light1.style.display="block";
+});
+cont[3].addEventListener('click',function(){
+    light1.style.display="none";
+})
